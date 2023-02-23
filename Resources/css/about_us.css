@@ -1,0 +1,91 @@
+/* Universal styles */
+
+/* HEADER*/
+
+/* Nav bar in nav.css */
+
+/* Title */
+
+#title {
+    margin-top: 7rem;
+}
+
+#title h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    padding-left: 2%;
+}
+
+/* MAIN */
+
+/* About us content */
+
+
+#about-us-content {
+    display: flex;
+    justify-content: center;
+}
+
+#about-us-content .grid-container {
+    display: grid;
+    width: 96%;
+    height: 55rem;
+    grid-template: repeat(6, 1fr) / repeat(8, 1fr);
+    gap: 1rem 2rem;
+}
+
+#about-us-content .grid-container .about-us-ps {
+    grid-area: 1 / 1 / span 6 / span 5; 
+}
+
+
+#about-us-content .grid-container .about-us-ps p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;  
+    font-weight: 500;
+    line-height: 1.2;    
+    max-width: 100%;
+    padding: 0.7rem 0;
+}
+
+#about-us-content .grid-container .img-container {
+    display: flex;
+    justify-content: center;
+}
+
+#about-us-content .grid-container #jim-munson-img {
+    grid-area: 1 / 6 / span 2 / span 3;
+}
+
+#about-us-content .grid-container  #brc-building-two {
+    grid-area: 3 / 6 / span 2 / span 3;
+
+}
+
+#about-us-content .grid-container  #brc-building-one {
+    grid-area: 5 / 6 / span 2 / span 3;
+
+}
+
+#about-us-content .grid-container .img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Mobile devices: About us content */
+@media only screen and (max-width: 430px) {
+
+    #about-us-content .mobile-flexbox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #about-us-content .grid-container .about-us-ps p {
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+
+}

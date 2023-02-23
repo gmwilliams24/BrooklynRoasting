@@ -1,0 +1,97 @@
+/* CSS only for the nav bar of each page */
+
+/* Universal styles */
+
+html {
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Nav bar */
+
+header nav {
+    display: flex;
+    background-color: rgb(56, 62, 86);
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header nav .nav-bar-list {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    list-style-type: none;
+    align-items: center;
+}
+
+header nav .nav-bar-list li {
+    padding-right: 4rem;
+}
+
+header nav .nav-bar-list li .img-container {
+    width: 12rem;
+}
+
+header nav .nav-bar-list li .img-container img{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+header nav .nav-bar-list li button{
+    font-family: 'Amatic SC', cursive;
+    color: rgb(56, 62, 86);
+    font-size: 3rem;
+    background-color: rgb(255, 206, 86);
+    padding: 0.25rem 1rem;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 0.25rem 0.25rem 0.5rem 0px rgba(0, 0, 0, 0.445);
+}
+
+.nav-bar-list li button:hover {
+    color: rgb(255, 255, 255);
+    font-size: 3.25rem;
+    background-color: rgb(76, 157, 175);
+    padding: 0 1rem;
+}
+
+/* Mobile devices: Nav bar */
+@media only screen and (max-width: 430px) {
+
+    /* Universal styles*/
+    html {
+        font-size: 8px;
+    }
+
+    header nav .nav-bar-list {
+        justify-content: space-around;
+    }
+
+    header nav .nav-bar-list div {
+        display: none;
+    }
+
+
+}
+
+/* Tablet devices: Nav bar */
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+    /* Universal styles*/
+    html {
+        font-size: 12px;
+    }
+
+    header nav .nav-bar-list {
+        justify-content: space-around;
+    }
+
+    header nav .nav-bar-list div {
+        display: none;
+    }
+}

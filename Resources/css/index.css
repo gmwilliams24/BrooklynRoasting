@@ -1,0 +1,122 @@
+/* Template before media queries */
+/* Template designed on laptop sized screen */
+
+/* Universal styles */
+
+button:hover {
+    cursor: pointer;
+}
+
+/* HEADER */
+
+/* Nav bar in nav.css */
+
+/* Title */
+
+#title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+#title h1 {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8rem;
+    width: auto;
+}
+
+
+/* Mobile devices: Title */
+@media only screen and (max-width: 430px) {
+    #title h1 {
+        text-align: center;
+    }
+}
+
+/* Tablet devices: Title */
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+
+    #title {
+        margin-top: 9rem;
+    }
+
+    #title h1 {
+        text-align: center;
+    }
+
+}
+
+/* MAIN */
+
+/* Breif Coffee Images*/
+
+#coffee-imgs-breif .breif-imgs-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+#coffee-imgs-breif .breif-imgs-list li {
+    display: flex;
+    justify-content: center;
+    width: calc(100%/3);
+}
+
+#coffee-imgs-breif .breif-imgs-list li .img-container {
+    overflow: hidden;
+    width: 50%;
+    padding: 2rem 0;
+}
+
+#coffee-imgs-breif .breif-imgs-list li .img-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile devices: Breif Coffee Images */
+@media only screen and (max-width: 430px) {
+
+    #coffee-imgs-breif .breif-imgs-list li {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+}
+
+/* Tablet devices: Breif Coffee Images */
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+
+    #coffee-imgs-breif .breif-imgs-list li {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+}
+
+/* Mission statement */
+
+#mission-statement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mission-statement h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+}
+
+#mission-statement .p-container {
+    width: 70%;
+}
+
+#mission-statement .p-container p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
